@@ -1,0 +1,52 @@
+body{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+
+.principal{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+ /* personalizar el menu */
+
+header{
+    background-color: whitesmoke;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+}
+
+h1{
+    padding: 0px 50px;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* personalizar primera vista */
+
+main{
+    border: solid black 1px;
+}
+
+.primeraVista{
+    display: flex;
+}
+
+.titulo{
+    text-align: start;
+    margin: 50px 10px;
+}
+
+h2{ 
+    font-size: 40px;
+    padding: 5px;
+    margin: 5px 0px 1px 5px;
+}
