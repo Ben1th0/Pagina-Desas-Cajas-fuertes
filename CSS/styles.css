@@ -1,24 +1,25 @@
 body{
-    background-color: antiquewhite;
+    background-color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0;
 }
 
 .principal{
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
     justify-items: center;
+    margin: 0;
 }
  /* personalizar el menu */
 
 header{
-    background-color: whitesmoke;
+    background-color: white;
     display: flex;
     gap: 100px;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
@@ -32,22 +33,178 @@ h1{
     padding: 0px 20px;
 }
 
-/* personalizar primera vista */
+/* cuerpo de la pagina */
 
 main{
     border: solid black 1px;
+    justify-items: center;
+    margin: 0px ;
 }
+
+/* personalizar primera vista */
 
 .primeraVista{
     display: flex;
-    margin: 50px 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 44, 44);
+    color: white;
 }
 
 .titulo{
     text-align: start;
     margin: 5px 0px 1px 50px;
+    padding: 2px;
 }
 
-h2{ 
+.titulo-empresa{ 
+    font-size: 60px;
+    margin: 0px;
+    max-width: 600px;
+    color: #b748ae;
+    
+}
+
+.seudonimo{
+    font-size: 35px;
+    color: #0073a7;
+    margin: 0px;
+}
+
+#textotitulo{
+    margin: 0px;
+}
+
+.logoprincipal{
+    width: 500px;
+    height: 500px;
+}
+
+.imglogoprincipal{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* seccion de personalizacion */
+
+.personalizacion{
+    background-color: aliceblue;
+    display: grid;
+    justify-content: center;
+}
+
+.titulo-pers{
     font-size: 40px;
+    color: #5848c0;
+}
+
+.perzonalizar{
+    display: flex;
+}
+
+/* caracteristicas */
+
+.caracteristica{
+    display: grid;
+    grid-template-areas: "boton boton"
+                       "tipo cerr"
+                       "colore colora";
+}
+
+.botones{
+    grid-area: boton;
+}
+
+.tipos{
+    grid-area: tipo;
+}
+
+.cerraduras{
+    grid-area: cerr;
+}
+
+.color-e{
+    grid-area: colore;
+}
+
+.color-a{
+    grid-area: colora;
+}
+
+/* vista de la caja fuerte */
+
+#espacio-3D{
+    width: 300px;
+    height: 300px;
+    margin: 3em auto 0 auto;
+    border: 1px solid rgba(0, 255, 0, 0.5);
+    position: relative;
+    perspective-origin: center -50%;
+    perspective: 500px;
+    transform: scale(0.75);}
+
+#cubo-3D{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px);
+    animation-name: gira;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+}
+
+.base{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.15);
+    transform: translateX(75px) translateY(75px) rotateX(90deg) translateZ(-200px);
+    box-shadow: 0 0 50px 100px rgba(0, 0, 0, 0.15);
+}
+
+.caja{
+    position: absolute;
+    width: 298px;
+    height: 298px;
+    border: 1px solid rgba(255, 150, 0, 0.75);
+    color: blue;
+    font-size: 3em;
+    text-align: center;
+    line-height: 298px;
+    box-shadow: 0px 0px 5px rgba(255,150, 0, 0.75); 
+}
+
+.puerta{
+    transform: translateZ(150px);
+}
+
+.cara-2{
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.cara-3{
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.cara-4{
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.cara-5{
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+.cara-6{
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+@keyframes gira{
+    0%{
+        transform: translateZ(-150px) rotateY(0deg);
+    }
+    100%{
+        transform: translateZ(-150px) rotateY(360deg);
+    }
 }
