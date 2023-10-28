@@ -1,12 +1,14 @@
 body{
     background-color: antiquewhite;
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .principal{
+    display: grid;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
+    justify-items: center;
 }
  /* personalizar el menu */
 
@@ -27,7 +29,7 @@ h1{
     display: flex;
     list-style-type: none;
     gap: 20px;
-    padding: 10px;
+    padding: 0px 20px;
 }
 
 /* personalizar primera vista */
@@ -38,15 +40,14 @@ main{
 
 .primeraVista{
     display: flex;
+    margin: 50px 10px;
 }
 
 .titulo{
     text-align: start;
-    margin: 50px 10px;
+    margin: 5px 0px 1px 50px;
 }
 
 h2{ 
     font-size: 40px;
-    padding: 5px;
-    margin: 5px 0px 1px 5px;
 }
