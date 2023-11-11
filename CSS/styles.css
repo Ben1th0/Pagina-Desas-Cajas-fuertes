@@ -43,6 +43,10 @@ main{
     margin: 0px ;
 }
 
+hr{
+    background-color: #050505;
+    border: 2px solid black;
+}
 /* personalizar primera vista */
 
 .primeraVista{
@@ -101,53 +105,102 @@ main{
 /* seccion de personalizacion */
 
 .personalizacion{
-    background-color: aliceblue;
-    display: grid;
+    background-color: white;
+    display: flex;
     justify-content: center;
+    gap: 5cm;
+    padding: 200px 5px;
 }
 
 .titulo-pers{
     font-size: 40px;
-    text-align: center;
-    color: #5848c0;
-    border-bottom: solid black 1px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .perzonalizar{
     display: flex;
+    justify-items: center;
     gap: 5cm;
 }
 
 /* caracteristicas */
 
-.caracteristica{
-    display: grid;
-    grid-template-areas: "boton boton"
-                       "tipo cerr"
-                       "colore colora";
-}
+    /* botones */
 
-/* caracteristicas - botones */
+    .botones{
+        display: flex;
+        justify-content: center;
+    }
 
-.botones{
-    grid-area: boton;
-}
+    .btnc,.btnf{  
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px 30px;
+        font-weight: 400;   
+        font-size: 1rem;
+        border-radius: 30px;
+        border: 1px solid;
+    }
 
-.tipos{
-    grid-area: tipo;
-}
+    .btnc, .btnf:hover{
+        border-color: black;
+        color: black;
+        background-color: #4baad5;
+    }
 
-.cerraduras{
-    grid-area: cerr;
-}
+    .btnc:hover, .btnf{
+        border-color: black;
+        color: black;
+        background-color: white;
+    }
 
-.color-e{
-    grid-area: colore;
-}
+    .btn-aceptar{
+        display: flex;
+        justify-content: center;
+    }
 
-.color-a{
-    grid-area: colora;
-}
+    /* opciones */
+
+    label{
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    #contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: top;
+        justify-items: center;
+    }
+
+    .colores{
+        display: flex;
+        margin: 0px;
+        padding: 10px 20px;
+    }
+
+    .cuadroc{
+        width: 50px;
+        height: 50px;
+        border: black solid 1px;
+        border-radius: 1    0px;
+    }
+
+    .color1{
+        background-color: #686c6f;
+    }
+
+    .color2{
+        background-color: #68000d;
+    }
 
 /* vista de la caja fuerte */
 
