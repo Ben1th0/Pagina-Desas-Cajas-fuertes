@@ -12,12 +12,11 @@
             <h1>D.E.S.A.S</h1>
             <nav >
                 <ul class="menu">
-                    <li>Inicio</li>
-                    <li>¿Quienes Somos?</li>
-                    <li>Servicios</li>
-                    <li>Proyectos</li>
-                    <li>Diseña Tu Caja Fuerte</li>
-                    <li>Contacto</li>
+                    <li><a class="menud" href="http://www.desas.com.co/">¿Quienes Somos?</a></li>
+                    <li><a class="menud" href="http://www.desas.com.co/servicios.html">Servicios</a></li>
+                    <li><a class="menud" href="http://www.desas.com.co/proyectos.html">Proyectos</a></li>
+                    <li><a class="menud" href="">Diseña Tu Caja Fuerte</a></li>
+                    <li><a class="menud" href="http://www.desas.com.co/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,90 +36,114 @@
                 <p id="textotitulo">"Potencia tu seguridad con la caja fuerte a tu estilo!!!"</p>
             </section>
             <section class="personalizacion">
-                <h3 class="titulo-pers">Personaliza tu caja fuerte</h3>
+                <h3 class="titulo-pers">Personaliza <br>tu caja fuerte</h3>
                 <div class="perzonalizar">
                     <div class="caracteristica">
                         <div class="botones">
                             <ul class="menu">
-                                <li><a href="" class="btnc">cofre</a></li>
-                                <li><a href="" class="btnf">caja fuerte</a></li>
+                                <li><button class="btnc" id="btnc">Cofre</button></li>
+                                <li><button class="btnf" id="btnf">Caja Fuerte</button></li>
                             </ul>
                         </div>
+                        <hr class="hrPersonalizar">
                         <div class="opciones">
-                            <form>
+                            <form id="formularioCF">
                                 <div id="contenedor">
-                                        <div id="cont-arr-izq">
-                                            <h4>Tipo:</h4>
-                                            <label for="tipo1" class="opciones">
-                                                <input type="radio" id="tipo1" name="tipo" value="1"> Tipo 1
-                                            </label>
-                                            <label for="tipo2" class="opciones">
-                                                <input type="radio" id="tipo2" name="tipo" value="2"> Tipo 2
-                                            </label>
-                                            <label for="tipo3" class="opciones">
-                                                <input type="radio" id="tipo3" name="tipo" value="3"> Tipo 3
-                                            </label>
-                                        </div>
-                                        <div id="cont-arr-der">    
-                                            <h4>Cerradura:</h4>
-                                            <label for="subtipo1" class="opciones">
-                                                <input type="radio" id="subtipo1" name="subtipo" value="1"> Subtipo 1
-                                            </label>
-                                            <label for="subtipo2" class="opciones">
-                                                <input type="radio" id="subtipo2" name="subtipo" value="2"> Subtipo 2
-                                            </label>
-                                            <label for="subtipo3" class="opciones">
-                                                <input type="radio" id="subtipo3" name="subtipo" value="3"> Subtipo 3
-                                            </label>
-                                            <label for="subtipo4" class="opciones">
-                                                <input type="radio" id="subtipo4" name="subtipo" value="4"> Subtipo 4
-                                            </label>
-                                            <label for="subtipo5" class="opciones">
-                                                <input type="radio" id="subtipo5" name="subtipo" value="5"> Subtipo 5
-                                            </label>
-                                        </div>
-                                        <div id="cont-abj-izq">
-                                            <h4>Color:</h4>
-                                            <label for="color1" class="opciones">
-                                                <div class="colores">
-                                                    <input type="radio" id="color1" name="color" value="1"> 
+                                    <div id="cont-arr-izq">
+                                        <h4>Tipo:</h4>
+                                        <label for="tipo1" class="opciones">
+                                            <input type="radio" id="tipo1" name="tipo" value="1"><span id="textoTipo1">Tipo 1</span>
+                                        </label>
+                                        <label for="tipo2" class="opciones">
+                                            <input type="radio" id="tipo2" name="tipo" value="2"><span id="textoTipo2">Tipo 2</span>
+                                        </label>
+                                        <label for="tipo3" class="opciones">
+                                            <input type="radio" id="tipo3" name="tipo" value="3"><span id="textoTipo3">Tipo 3</span>
+                                        </label>
+                                    </div>
+                                    <div id="cont-arr-der">    
+                                        <h4>Cerradura:</h4>
+                                        <label for="subtipo1" class="opciones">
+                                            <input type="radio" id="subtipo1" name="subtipo" value="1"> Mecanica
+                                        </label>
+                                        <label for="subtipo2" class="opciones">
+                                            <input type="radio" id="subtipo2" name="subtipo" value="2"> Digital
+                                        </label>
+                                        <label for="subtipo3" class="opciones">
+                                            <input type="radio" id="subtipo3" name="subtipo" value="3"> Bluetooth
+                                        </label>
+                                        <label for="subtipo4" class="opciones">
+                                            <input type="radio" id="subtipo4" name="subtipo" value="4"> Wifi
+                                        </label>
+                                        <label for="subtipo5" class="opciones">
+                                            <input type="radio" id="subtipo5" name="subtipo" value="5"> Biometrica
+                                        </label>
+                                    </div>
+                                    <div id="cont-abj-izq">
+                                        <h4>Color:</h4>
+                                        <label for="color1" class="opciones">
+                                            <div class="colores">
+                                                <input type="radio" id="color1" name="color" value="1"> 
                                                 <div class="cuadroc color1"></div>
-                                                </div>
-                                            </label>
-                                            <label for="color2" class="opciones">
-                                                <div class="colores">
-                                                    <input type="radio" id="color2" name="color" value="2">
-                                                    <div class="cuadroc color2"></div>
-                                                </div>
-                                            </label>
+                                            </div>
+                                        </label>
+                                        <label for="color2" class="opciones">
+                                            <div class="colores">
+                                                <input type="radio" id="color2" name="color" value="2">
+                                                <div class="cuadroc color2"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div id="cont-abj-der">    
+                                        <h4>Otros colores:</h4>
+                                        <div class="colores">
+                                            <div>
+                                                <label for="complementario1" class="opciones">
+                                                    <div class="colores">
+                                                        <input type="radio" id="complementario1" name="color" value="3">
+                                                        <div class="cuadroc color3"></div>
+                                                    </div>
+                                                </label>
+                                                <label for="complementario2" class="opciones">
+                                                    <div class="colores">
+                                                        <input type="radio" id="complementario2" name="color" value="4">
+                                                        <div class="cuadroc color4"></div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <label for="complementario3" class="opciones">
+                                                    <div class="colores">
+                                                        <input type="radio" id="complementario3" name="color" value="5">
+                                                        <div class="cuadroc color5"></div>
+                                                    </div>
+                                                </label>
+                                                <label for="complementario4" class="opciones">
+                                                    <div class="colores">
+                                                        <input type="radio" id="complementario4" name="color" value="6">
+                                                        <div class="cuadroc color6"></div>
+                                                    </div>
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div id="cont-abj-der">    
-                                            <h4>Otros colores:</h4>
-                                            <label for="complementario1" class="opciones">
-                                                <input type="radio" id="complementario1" name="complementario" value="1"> Complementario 1
-                                            </label>
-                                            <label for="complementario2" class="opciones">
-                                                <input type="radio" id="complementario2" name="complementario" value="2"> Complementario 2
-                                            </label>
-                                            <label for="complementario3" class="opciones">
-                                                <input type="radio" id="complementario3" name="complementario" value="3"> Complementario 3
-                                            </label>
-                                            <label for="complementario4" class="opciones">
-                                                <input type="radio" id="complementario4" name="complementario" value="4"> Complementario 4
-                                            </label>
-                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btn-aceptar">
-                                    <input type="submit" value="Enviar">
+                                    <input type="submit" value="Crear Caja" class="btne">
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </section>
-            <hr>
-            <section class="informacioncaja">
-                <div class="representacion">
+            <section class="informacioncaja" id="informacioncaja">
+                <div class="descripcion">
+                    <h3 class="tituloDs">Tu Caja fuerte</h3>
+                    <p class="infoDS"><b>Caja fuerte tipo 1:</b> dsld;jfasdlkasdfls;jasdfalhasdkjhfaslhlasdflk</p>
+                    <p class="infoDS"><b>Cerradura:</b> ;lajksd;fas;alfs</p>
+                    <p class="infoDS"><b>Color:</b> ;kjdas;klgja;slj;gas</p>
+                </div>
+                <!-- <div class="representacion">
                     <div id="espacio-3D">
                         <div id="cubo-3D">
                             <div class="base"></div>
@@ -132,9 +155,12 @@
                             <aside class="caja cara-5"></aside>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
         </main>
     </div>
+
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/scriptsTCF.js"></script>
 </body>
 </html>
