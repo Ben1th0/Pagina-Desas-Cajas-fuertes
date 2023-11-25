@@ -265,7 +265,8 @@ hr{
     align-items: center;
     color: white;
     margin: 0px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .descripcion{
@@ -280,17 +281,29 @@ hr{
 }
 
 .infoDS{
+    max-width: 700px;
     font-size: 20px;
     padding: 0px 0px 0px 60px;
 }
 
+.infodescrip{
+    padding-left: 80px;
+    text-align: justify;
+}
+
 /* vista de la caja fuerte */
+
+.representacion{
+    margin-right: 200px;
+    align-content: center;
+    justify-content: center;
+}
 
 #espacio-3D{
     width: 300px;
     height: 300px;
     margin: 3em auto 0 auto;
-    border: 1px solid rgba(0, 255, 0, 0.5);
+    /* border: 1px solid rgba(0, 255, 0, 0.5); */
     position: relative;
     perspective-origin: center -50%;
     perspective: 500px;
@@ -359,4 +372,17 @@ hr{
     100%{
         transform: translateZ(-150px) rotateY(360deg);
     }
+}
+
+/* ------Footer------ */
+footer{
+    margin: 0px;
+    padding: 10px;
+}
+
+.copyDESAS{
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
+    padding: 10px;
 }
