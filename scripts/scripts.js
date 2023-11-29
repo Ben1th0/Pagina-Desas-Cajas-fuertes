@@ -31,3 +31,7 @@ botonCaja.addEventListener("click", function(){
     RdBtn3.value = 'Blindada'
     tipo3.textContent = "Blindada";
 })
+
+document.querySelector('.menu-btn').addEventListener('click', () =>{
+    document.querySelector('header').classList.toggle('header');
+})

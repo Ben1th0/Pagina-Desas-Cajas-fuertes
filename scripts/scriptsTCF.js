@@ -1,5 +1,7 @@
-const nuevaEstructura = document.getElementById("informacioncaja");
-const caja = document.querySelectorAll('.caja');
+const nuevaEstructura = document.querySelector('main');
+const seccion = document.createElement('section');
+    seccion.classList.add('informacioncaja');
+// const caja = document.querySelectorAll('.caja');
 
 document.getElementById('formularioCF').addEventListener('submit', function(event) {
 
@@ -38,9 +40,17 @@ document.getElementById('formularioCF').addEventListener('submit', function(even
       }
     }
 
-    nuevaEstructura.innerHTML = '';
+    
     
     // Crear la estructura HTML dinámicamente
+
+    
+
+    seccion.innerHTML = '';
+
+    var descripcion = document.createElement('div');
+    descripcion.classList.add('descripcion');
+    descripcion.setAttribute('id', 'informacioncaja');
 
     var titulo = document.createElement('h3');
     titulo.classList.add('tituloDs');
@@ -62,11 +72,72 @@ document.getElementById('formularioCF').addEventListener('submit', function(even
     parrafo4.classList.add('infoDS');
     parrafo4.innerHTML = `<b>Color:</b> ${colorseleccionado}`;
 
-    nuevaEstructura.appendChild(titulo);
-    nuevaEstructura.appendChild(parrafo1);
-    nuevaEstructura.appendChild(parrafo2);
-    nuevaEstructura.appendChild(parrafo3);
-    nuevaEstructura.appendChild(parrafo4);
+    
+    
+    
+
+    var representacion = document.createElement('div');
+    representacion.classList.add('representacion');
+
+    var espacio = document.createElement('div');
+    espacio.setAttribute('id', 'espacio-3D');
+
+    var cubo = document.createElement('div');
+    cubo.setAttribute('id', 'cubo-3D');
+
+    var base = document.createElement('div');
+    base.classList.add('base');
+
+    var puerta = document.createElement('aside');
+    puerta.classList.add('caja');
+    puerta.classList.add('puerta');
+
+    var cara2 = document.createElement('aside');
+    cara2.classList.add('caja');
+    cara2.classList.add('cara-2');
+
+    var cara3 = document.createElement('aside');
+    cara3.classList.add('caja');
+    cara3.classList.add('cara-3');
+
+    var cara4 = document.createElement('aside');
+    cara4.classList.add('caja');
+    cara4.classList.add('cara-4');
+
+    var cara5 = document.createElement('aside');
+    cara5.classList.add('caja');
+    cara5.classList.add('cara-5');
+
+    var cara6 = document.createElement('aside');
+    cara6.classList.add('caja');
+    cara6.classList.add('cara-6');
+
+
+    seccion.appendChild(descripcion);
+
+    descripcion.appendChild(titulo);
+    descripcion.appendChild(parrafo1);
+    descripcion.appendChild(parrafo2);
+    descripcion.appendChild(parrafo3);
+    descripcion.appendChild(parrafo4);
+
+    seccion.appendChild(representacion);
+
+    representacion.appendChild(espacio);
+
+    espacio.appendChild(cubo);
+
+    cubo.appendChild(base);
+    cubo.appendChild(puerta);
+    cubo.appendChild(cara2);
+    cubo.appendChild(cara3);
+    cubo.appendChild(cara4);
+    cubo.appendChild(cara5);
+    cubo.appendChild(cara6);
+
+    nuevaEstructura.appendChild(seccion);
+    
+    var caja = document.querySelectorAll('.caja');
 
     switch (tiposeleccionado){
       case "Puerta Blindada":
@@ -121,6 +192,7 @@ document.getElementById('formularioCF').addEventListener('submit', function(even
           })
         break;
     }
+    
     
 });
 
