@@ -44,7 +44,25 @@ document.getElementById('formularioCF').addEventListener('submit', function(even
     
     // Crear la estructura HTML dinámicamente
 
-    
+    var imagencerradura;
+
+    switch (cerraduraseleccionada){
+      case "Mecanica":
+        imagencerradura = "/Imagenes/Mecanica.png";
+        break;
+      case "Digital":
+        imagencerradura = "/Imagenes/Digital.png"
+        break;
+      case "Bluetooth":
+        imagencerradura = "/Imagenes/Bluetooth.png"
+        break;
+      case "Wifi":
+        imagencerradura = "/Imagenes/wifi.png"
+        break;
+      case "Biometrica":
+        imagencerradura = "/Imagenes/Biometrica.png"
+        break;
+    }
 
     seccion.innerHTML = '';
 
@@ -68,6 +86,10 @@ document.getElementById('formularioCF').addEventListener('submit', function(even
     parrafo3.classList.add('infoDS');
     parrafo3.innerHTML = `<b>Cerradura:</b> ${cerraduraseleccionada}`;
 
+    var cerraduraimagen = document.createElement('img');
+    cerraduraimagen.classList.add('cerraduraImagen');
+    cerraduraimagen.src = imagencerradura;
+    
     var parrafo4 = document.createElement('p');
     parrafo4.classList.add('infoDS');
     parrafo4.innerHTML = `<b>Color:</b> ${colorseleccionado}`;
@@ -119,6 +141,7 @@ document.getElementById('formularioCF').addEventListener('submit', function(even
     descripcion.appendChild(parrafo1);
     descripcion.appendChild(parrafo2);
     descripcion.appendChild(parrafo3);
+    descripcion.appendChild(cerraduraimagen);
     descripcion.appendChild(parrafo4);
 
     seccion.appendChild(representacion);
@@ -168,7 +191,7 @@ document.getElementById('formularioCF').addEventListener('submit', function(even
         break;
       case "Madera":
         caja.forEach(caja => {
-          caja.style.backgroundColor = "#68000d";
+          caja.style.backgroundColor = "#b35c1b";
           })
         break;
       case "Negro":
@@ -176,19 +199,19 @@ document.getElementById('formularioCF').addEventListener('submit', function(even
           caja.style.backgroundColor = "black";
           })
         break;  
-      case "Trigo":
+      case "Amarillo":
         caja.forEach(caja => {
-          caja.style.backgroundColor = "wheat";
+          caja.style.backgroundColor = "#d3a93d";
           })
         break; 
       case "Azul":
         caja.forEach(caja => {
-          caja.style.backgroundColor = "blue";
+          caja.style.backgroundColor = "#343669";
           })
         break;
       case "Rojo":
         caja.forEach(caja => {
-          caja.style.backgroundColor = "red";
+          caja.style.backgroundColor = "#8b1a22";
           })
         break;
     }

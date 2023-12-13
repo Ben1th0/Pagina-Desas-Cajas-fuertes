@@ -236,7 +236,7 @@ hr{
     }
 
     .color2{
-        background-color: #68000d;
+        background-color: #914a12;
     }
 
     .color3{
@@ -244,15 +244,15 @@ hr{
     }
 
     .color4{
-        background-color: wheat;
+        background-color: #d3a93d;
     }
 
     .color5{
-        background-color: blue;
+        background-color: #343669;
     }
 
     .color6{
-        background-color: red;
+        background-color: #8b1a22;
     }
 
 
@@ -291,6 +291,10 @@ hr{
     text-align: justify;
 }
 
+.cerraduraImagen{
+    padding: 0px 0px 0px 80px;
+}
+
 /* vista de la caja fuerte */
 
 .representacion{
@@ -301,7 +305,6 @@ hr{
     width: 300px;
     height: 300px;
     margin: 3em auto 0 auto;
-    /* border: 1px solid rgba(0, 255, 0, 0.5); */
     position: relative;
     perspective-origin: center -50%;
     perspective: 500px;
@@ -467,6 +470,7 @@ footer{
     }
 
     .informacioncaja{
+        height: 1300px;
         grid-template-columns: 1fr;
         justify-items: center;
     }
@@ -486,6 +490,11 @@ footer{
 
     .representacion{
         margin-right: 0px;
+    }
+
+    .cerraduraImagen{
+        padding: 0px;
+        width: 90%;;
     }
 }
 
